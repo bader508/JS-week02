@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-size: cover;
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    border-right: .15em solid rgb(109, 79, 24);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .01em;
+    animation: typing 5s steps(40, end), blink-caret .751s step-end infinite;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(204, 204, 160);
+}
+
+.typewriter-1 {
+    margin-top: 5%;
+    text-align: center;
+    color: rgb(206, 182, 182);
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: rgb(24, 17, 4);
+    }
+}
+
+.flying-effect {
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-46%) translateY(-50%);
+}
+
+.flying-effect li {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 5em;
+    letter-spacing: 55px;
+    opacity: 1;
+    transition: all 4s ease;
+    color: aquamarine;
+}
+
+.flying-effect.hidden li {
+    opacity: 0;
+}
+
+.flying-effect.hidden li:nth-child(1) {
+    transform: translateX(-200px) translateY(-200px);
+}
+
+.flying-effect.hidden li:nth-child(2) {
+    transform: translateX(20px) translateY(100px);
+}
+
+.flying-effect.hidden li:nth-child(3) {
+    transform: translateX(-150px) translateY(-80px);
+}
+
+.flying-effect.hidden li:nth-child(4) {
+    transform: translateX(10px) translateY(-200px);
+}
+
+.flying-effect.hidden li:nth-child(5) {
+    transform: translateX(-300px) translateY(200px);
+}
+
+.flying-effect.hidden li:nth-child(6) {
+    transform: translateX(20px) translateY(-20px);
+}
+
+.flying-effect.hidden li:nth-child(7) {
+    transform: translateX(30px) translateY(200px);
+}
+
+label,
+input,
+textarea {
+    display: block;
+    width: 40%;
+}
+
+input,
+textarea {
+    display: block;
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+input[type=text]:focus {
+    border-color: blueviolet;
+    box-shadow: blueviolet;
+}
+
+input[type=e-mail]:focus {
+    border-color: blueviolet;
+    box-shadow: blueviolet;
+}
+
+input[type=textarea]:focus {
+    border-color: blueviolet;
+    box-shadow: blueviolet;
+}
+
+form {
+    padding-top: 320px;
+    color: rgb(119, 170, 187);
+}
